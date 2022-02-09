@@ -9,6 +9,9 @@ import Script from "next/script";
 export default function Home({allPostsData}) {
     return (
         <Layout home>
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4212416404238058"
+                    crossOrigin="anonymous"/>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
