@@ -17,12 +17,14 @@ export async function getStaticProps({params}) {
 export default function Post({postData}) {
     return (
         <Layout>
+            <Script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.4.0/highlight.min.js"
+                    strategy={"lazyOnload"} onLoad={() => {
+                hljs.highlightAll();
+            }}/>
             <Head>
                 <title>{postData.title}</title>
                 <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
                       rel="stylesheet"/>
-                <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-                <script>hljs.highlightAll();</script>
             </Head>
             <article>
                 <h1 className={utilStyles.headingXl}>{postData.title}</h1>
