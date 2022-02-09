@@ -19,9 +19,9 @@ export default function Post({postData}) {
         <Layout>
             <Head>
                 <title>{postData.title}</title>
-                <link rel="stylesheet"
-                      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/default.min.css"/>
-                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+                <link href="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+                      rel="stylesheet"/>
+                <script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
                 <script>hljs.highlightAll();</script>
             </Head>
             <article>
