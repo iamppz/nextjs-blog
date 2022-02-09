@@ -22,7 +22,7 @@ tags:
 
 ### 效果图
 
-{% asset_img image.png 图片 %}
+![image](/flowchart-vue/image.png)
 
 ### 使用方式
 

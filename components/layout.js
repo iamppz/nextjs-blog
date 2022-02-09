@@ -40,26 +40,33 @@ export default function Layout({ children, home }) {
                     </>
                 ) : (
                     <>
-                        <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/profile.jpg"
-                                    className={utilStyles.borderCircle}
-                                    height={108}
-                                    width={108}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
-                            </Link>
-                        </h2>
+                        {/*<Link href="/">*/}
+                        {/*    <a>*/}
+                        {/*        <Image*/}
+                        {/*            priority*/}
+                        {/*            src="/images/profile.jpg"*/}
+                        {/*            className={utilStyles.borderCircle}*/}
+                        {/*            height={108}*/}
+                        {/*            width={108}*/}
+                        {/*            alt={name}*/}
+                        {/*        />*/}
+                        {/*    </a>*/}
+                        {/*</Link>*/}
+                        {/*<h2 className={utilStyles.headingLg}>*/}
+                        {/*    <Link href="/">*/}
+                        {/*        <a className={utilStyles.colorInherit}>{name}</a>*/}
+                        {/*    </Link>*/}
+                        {/*</h2>*/}
                     </>
                 )}
             </header>
+            {!home && (
+                <div className={styles.backToHome}>
+                    <Link href="/">
+                        <a>← Back to home</a>
+                    </Link>
+                </div>
+            )}
             <main>{children}</main>
             {!home && (
                 <div className={styles.backToHome}>

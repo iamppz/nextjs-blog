@@ -6,7 +6,7 @@ tags:
 ---
 [source-map-explorer](https://github.com/danvk/source-map-explorer) 通过分析 sourcemap 文件生成 CRA 项目打包体积分析报告，效果如下图：
 
-![image](source-map-explorer/image.png)
+![image](/source-map-explorer/image.png)
 
 ### 安装与使用：
 
