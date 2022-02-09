@@ -26,11 +26,11 @@ tags:
 
 ### 使用方式
 
-```shell script
+```shell
 yarn add flowchart-vue
 ```
 
-```vue
+```html
 <template>
     <div id="app">
         <button type="button" @click="$refs.chart.add(10, 10)">
